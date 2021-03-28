@@ -13,6 +13,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import Home from './src/pages/Home/Home';
 import User from './src/pages/User/User';
+import Repository from './src/pages/Repository/Repository';
 
 const Stack = createStackNavigator();
 
@@ -29,6 +30,11 @@ const App: () => Node = () => {
           name="User"
           component={User}
           options={{title: 'Usuário'}}
+        />
+         <Stack.Screen
+          name="Repository"
+          component={Repository}
+          options={{title: 'Repositórios'}}
         />
       </Stack.Navigator>
     </NavigationContainer>

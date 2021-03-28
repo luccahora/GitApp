@@ -18,7 +18,7 @@ const Home: React.FC = ({navigation}) => {
           <TitleCardOption> Usuário </TitleCardOption>
         </CardOption>
 
-        <CardOption>
+        <CardOption onPress={() => navigation.navigate('Repository')}>
           <Image
             style={{height: 50, width: 50}}
             source={require('../../assets/database.png')}
