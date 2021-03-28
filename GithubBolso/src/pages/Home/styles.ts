@@ -43,8 +43,3 @@ export const TitleCardOption = styled.Text`
   font-weight: bold;
   margin-left: 30px;
 `;
-
-/* export const iconsCard = styled.Image`
-  height: 30px;
-  width: 30px;
-`; */
