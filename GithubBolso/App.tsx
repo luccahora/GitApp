@@ -25,7 +25,11 @@ const App: () => Node = () => {
           component={Home}
           options={{headerShown: false}}
         />
-        <Stack.Screen name="User" component={User} />
+        <Stack.Screen
+          name="User"
+          component={User}
+          options={{title: 'Usuário'}}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

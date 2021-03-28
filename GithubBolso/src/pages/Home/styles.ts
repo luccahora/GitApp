@@ -29,15 +29,15 @@ export const CardOption = styled.TouchableOpacity`
   background-color: #ffffff;
   border: 1px;
   border-color: #bfc5c7;
-  border-radius: 5px;
-  height: 100px;
+  border-radius: 15px;
+  height: 120px;
   width: 350px;
   margin-bottom: 30px;
   padding-left: 30px;
 `;
 
 export const TitleCardOption = styled.Text`
-  font-size: 18px;
+  font-size: 20px;
   font-family: 'Roboto-Medium';
   color: #7d5ec5;
   font-weight: bold;
