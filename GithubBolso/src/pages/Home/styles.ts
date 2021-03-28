@@ -16,11 +16,12 @@ export const Header = styled.View`
 `;
 
 export const Container = styled.View`
+ 
   background-color: #ecf0f2;
   padding-top: 25px;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  flex: 1;
 `;
 
 export const CardOption = styled.TouchableOpacity`

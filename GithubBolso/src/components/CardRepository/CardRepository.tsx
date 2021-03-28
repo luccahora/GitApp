@@ -14,7 +14,17 @@ import {
   SectionInfoRepo,
 } from './styles';
 
-const CardRepository: React.FC = () => {
+interface Repository {
+  urlUserImage: string;
+  login: string;
+  nameRepo: string;
+  description: string;
+  language: string;
+  forks: string;
+  star: string;
+}
+
+const CardRepository: React.FC<Repository> = props => {
   return (
     <>
       <Container>
@@ -26,41 +36,37 @@ const CardRepository: React.FC = () => {
               borderRadius: 50,
             }}
             source={{
-              uri: 'https://avatars.githubusercontent.com/u/39227316?v=4',
+              uri: props.urlUserImage,
             }}
           />
           <SectionNameLogin>
-            <NameUser> Lucca Hora</NameUser>
-            <LoginUser>luccahora</LoginUser>
+            <NameUser>{props.login}</NameUser>
           </SectionNameLogin>
         </SectionInfoUser>
         <SectionInfoRepository>
-          <RepositoryName>CertidaoNegativaBahia</RepositoryName>
-          <Description>
-            Script para fazer download automático de Certidões Negativas pela
-            Sefaz BA.
-          </Description>
+          <RepositoryName>{props.nameRepo}</RepositoryName>
+          <Description>{props.description}</Description>
           <InfoRepository>
             <SectionInfoRepo>
               <Image
                 style={{height: 20, width: 20}}
                 source={require('../../assets/circulo.png')}
               />
-              <TextDescription>Java</TextDescription>
+              <TextDescription>{props.language}</TextDescription>
             </SectionInfoRepo>
             <SectionInfoRepo>
               <Image
                 style={{height: 20, width: 20}}
                 source={require('../../assets/share.png')}
               />
-              <TextDescription>12</TextDescription>
+              <TextDescription>{props.forks}</TextDescription>
             </SectionInfoRepo>
             <SectionInfoRepo>
               <Image
                 style={{height: 20, width: 20}}
                 source={require('../../assets/star.png')}
               />
-              <TextDescription>0</TextDescription>
+              <TextDescription>{props.star}</TextDescription>
             </SectionInfoRepo>
           </InfoRepository>
         </SectionInfoRepository>

@@ -52,3 +52,7 @@ export const TextButtonSearch = styled.Text`
   color: #ffffff;
 `;
 
+export const Error = styled.Text`
+  color: #c53030;
+  font-size: 18px;
+`;
