@@ -10,6 +10,7 @@
 - React Native
 - TypeScript
 - Styled-components
+- React Navigation
 - Axios
 
 ## Executar o app
