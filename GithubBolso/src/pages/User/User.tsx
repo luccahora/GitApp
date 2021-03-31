@@ -50,8 +50,7 @@ const User: React.FC = () => {
 
       setInputError('');
     } catch (err) {
-       setInputError("Erro na busca por esse usuário ");
-      
+      setInputError('Erro na busca por esse usuário ');
     }
   }
 
